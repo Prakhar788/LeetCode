@@ -136,43 +136,43 @@ class Solution
 }
 
 
-//class Solution
-{
-    Node LoopDetection(Node head){
-        if(head==null)
-        return;
-        Node slow=head;
-        Node fast=head;
-        while(fast!=null && fast.next!=null){
-            slow=slow.next;
-            fast=fast.next.next;
-            if(fast==slow){
-                return slow;
-            }
-        }
-        return head;
-    }
-    Node getstarting(Node head){
-        if(head==null)
-        return;
-        Node slow=head;
-        Node intersection=LoopDetection(head);
-        while(slow!=starting){
-            slow=slow.next;
-            intersection=intersection.next;
-        }
-        return slow;
+// class Solution
+// {
+//     Node LoopDetection(Node head){
+//         if(head==null)
+//         return;
+//         Node slow=head;
+//         Node fast=head;
+//         while(fast!=null && fast.next!=null){
+//             slow=slow.next;
+//             fast=fast.next.next;
+//             if(fast==slow){
+//                 return slow;
+//             }
+//         }
+//         return head;
+//     }
+//     Node getstarting(Node head){
+//         if(head==null)
+//         return;
+//         Node slow=head;
+//         Node intersection=LoopDetection(head);
+//         while(slow!=starting){
+//             slow=slow.next;
+//             intersection=intersection.next;
+//         }
+//         return slow;
         
-    }
-    public static void removeLoop(Node head){
-        if(head==null)
-        return;
-        Node startLoop=getstarting(head);
-        Node temp=startLoop;
-        while(temp.next!=startLoop){
-            temp=temp.next;
-        }
-       temp.next=null;
-    }
-}
+//     }
+//     public static void removeLoop(Node head){
+//         if(head==null)
+//         return;
+//         Node startLoop=getstarting(head);
+//         Node temp=startLoop;
+//         while(temp.next!=startLoop){
+//             temp=temp.next;
+//         }
+//        temp.next=null;
+//     }
+// }
 
