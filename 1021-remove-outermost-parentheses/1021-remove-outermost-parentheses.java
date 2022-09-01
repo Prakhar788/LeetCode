@@ -9,11 +9,11 @@ class Solution {
         for(int i = 0; i < len; ++i){
             char ch = s.charAt(i);
             
-            if(ch == '(') c++;
+            if(ch == '(') ++c;
             
             if(c > 1) sb.append(ch);
             
-            if(ch == ')') c--;
+            if(ch == ')') --c;
             
                 
         }
