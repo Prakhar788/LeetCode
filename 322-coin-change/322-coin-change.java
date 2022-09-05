@@ -29,3 +29,14 @@ class Solution {
 //Where to use dp?1.Overlapping Subproblems
 //2.Optimal substructure
 //What is DP?-Dp is an algorithmic paradigm:Divide a problem into subproblems. AND compute results of subproblem.AND Storing them in memory with optimal Sub-Structure.
+//technique
+//methodology
+//paradigm
+//solving complex problems efficiently
+//Breaking down problems into simpler sub problems.
+//Solving Each Sub-Problems Exactly Once.
+//Storing results of sub problems in a table and re-using when needed.
+//What type of problems can be solved using dp?
+//The problems should have the properties->
+//Optimal Substructure.
+//Overlapping Subproblems.
