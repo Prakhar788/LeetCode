@@ -7,6 +7,7 @@ class Solution {
             }
             if(s.charAt(i)==')'){
                 c--;
+                continue;
             }
             ans=Math.max(c,ans);
         }
