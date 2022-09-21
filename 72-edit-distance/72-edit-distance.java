@@ -1,7 +1,6 @@
 class Solution {
     public int min(int a,int b,int c){
-        int d=Math.min(a,b);
-        return Math.min(d,c);
+        return Math.min(c,Math.min(a,b));
     }
     public int minDistance(String word1, String word2) {
     char[]str1=word1.toCharArray(); 
