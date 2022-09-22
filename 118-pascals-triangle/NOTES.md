@@ -1,0 +1,1 @@
+for any row abd coloumn=r-1Cc-1
