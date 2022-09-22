@@ -1,16 +1,35 @@
+// class Solution {
+//     public List<Integer> getRow(int rowIndex) {
+//         List<Integer> result = new ArrayList<>();
+//         result.add(1);
+//         if(rowIndex == 0){
+//             return result;
+//         }
+//         long temp = 1;
+//         for(int i = 1; i < rowIndex; i++){
+//             temp = (temp *(rowIndex - (i - 1))) / i;
+//             result.add((int)temp);
+//         }
+//         result.add(1);
+//         return result;
+//     }
+// }
+
 class Solution {
     public List<Integer> getRow(int rowIndex) {
-        List<Integer> result = new ArrayList<>();
-        result.add(1);
-        if(rowIndex == 0){
-            return result;
+        Integer[] result =new Integer[rowIndex+1];
+        result[0]=1;
+        for(int i=1; i<=rowIndex; i++){
+            int temp = 1;
+            for(int j=0; j <i+1; j++){
+                if(j==0 || j==i) result[j]=1;
+                else{
+                    int keep=result[j];
+                    result[j]=temp+keep;
+                    temp=keep;
+                }
+            }
         }
-        long temp = 1;
-        for(int i = 1; i < rowIndex; i++){
-            temp = (temp *(rowIndex - (i - 1))) / i;
-            result.add((int)temp);
-        }
-        result.add(1);
-        return result;
+        return Arrays.asList(result);
     }
 }
