@@ -14,4 +14,4 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 8</code></li>
 </ul>
-</div>
+</div>![genretepara](https://user-images.githubusercontent.com/102613412/210300554-ebddd30a-26f0-4a88-82f6-0a9055c91161.jpeg)
