@@ -33,9 +33,11 @@ class Solution{
     static int matrixMultiplication(int N, int arr[])
     {
         // code here
-        
-        for(int[] i:dp){
-            Arrays.fill(i,-1); }
+        for(int i=0;i<dp.length;i++){
+            for(int j=0;j<dp[0].length;j++){
+                dp[i][j]=-1;
+            }
+        }
         int a=solve(arr,1,N-1);
         return a;
     }
