@@ -43,8 +43,8 @@ public class BstPair {
 			}
 
 			sbst.isbst = false;
-			sbst.max = Math.max(rbst.max, Math.max(lbst.max, root.val));
-			sbst.min = Math.min(rbst.min, Math.min(lbst.min, root.val));
+			// sbst.max = Math.max(rbst.max, Math.max(lbst.max, root.val));
+			// sbst.min = Math.min(rbst.min, Math.min(lbst.min, root.val));
 			return sbst;
 
 		}
