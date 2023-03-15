@@ -1,9 +1,11 @@
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
-        Arrays.sort(nums);
-        List<List<Integer>> list = new ArrayList<List<Integer>>();
         
-        for(int i=0 ; i<nums.length-2 ; i++){
+        List<List<Integer>> list = new ArrayList<List<Integer>>();
+        if(nums==null || nums.length<3){
+            return list;
+        }
+        Arrays.sort(nums);for(int i=0 ; i<nums.length-2 ; i++){
             if(i ==0 || (i>0 && nums[i] != nums[i-1]) ){
                 int ans =0- nums[i];
                 int low = i+1;
@@ -16,9 +18,9 @@ class Solution {
                low++ ;
                high--;
                  }else{
-                        if(nums[low]+nums[high] > ans){
-                             high--;
-                        }else low++;
+                        if(nums[low]+nums[high] < ans){
+                            low++;
+                        }else  high--;
                  }
                 }
                 
