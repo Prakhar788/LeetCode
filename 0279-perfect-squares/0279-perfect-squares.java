@@ -1,3 +1,4 @@
+// worst case=>o(n^2)
 class Solution {
     public int numSquares(int n) {
      int dp[]=new int[n+1];
@@ -12,3 +13,8 @@ class Solution {
         return dp[n];
     }
 }
+// Three Approach=>
+
+// O(1)=>lagrange four square theorem ,three no. square theorem.
+// =>Recursion +Memoziation
+// =>tabulation
